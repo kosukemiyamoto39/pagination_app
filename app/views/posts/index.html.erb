@@ -1,0 +1,11 @@
+<%
+=begin%>
+ <%= render partial: "post", collection: @posts %> 
+<%= paginate @posts %> 
+<%
+=end%>
+
+<h1>投稿一覧</h1>
+<%= render "form" %>
+<%= render @posts %>
+<%= paginate @posts %>
